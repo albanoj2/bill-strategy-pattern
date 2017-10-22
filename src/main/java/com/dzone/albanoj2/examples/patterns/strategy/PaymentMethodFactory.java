@@ -12,7 +12,7 @@ public class PaymentMethodFactory {
 			case "cash":
 				return createCash();
 		}
-		return createCreditCard();
+		throw new IllegalArgumentException();
 	}
 	
 	public static CreditCard createCreditCard() {
